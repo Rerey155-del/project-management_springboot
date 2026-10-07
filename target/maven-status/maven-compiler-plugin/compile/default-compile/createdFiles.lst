@@ -43,6 +43,7 @@ com/nodewave/portal/feature/auth/AuthController.class
 com/nodewave/portal/core/seeder/DataSeeder.class
 com/nodewave/portal/exception/OptimisticLockConflictException.class
 com/nodewave/portal/core/entity/TaskDependency.class
+com/nodewave/portal/feature/internal/InternalTaskController.class
 com/nodewave/portal/core/entity/Task.class
 com/nodewave/portal/feature/client/ClientTaskService.class
 com/nodewave/portal/exception/GlobalExceptionHandler.class
