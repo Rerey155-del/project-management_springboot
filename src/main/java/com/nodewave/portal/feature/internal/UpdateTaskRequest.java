@@ -7,9 +7,9 @@ public record UpdateTaskRequest(
         @Schema(description = "Status baru tugas", example = "IN_PROGRESS")
         TaskStatus status,
 
-        @Schema(description = "Deskripsi baru (hanya PM yang berhak mengedit)", example = "Update deskripsi spesifikasi")
+        @Schema(description = "Deskripsi baru (Hanya dapat diubah oleh PM, kosongkan jika engineer)", example = "")
         String description,
 
-        @Schema(description = "Versi data untuk Optimistic Locking", example = "0")
+        @Schema(description = "Versi data untuk Optimistic Locking (Awal: 1)", example = "1")
         Integer version
 ) {}
