@@ -15,19 +15,12 @@ import java.util.Optional;
 public interface TaskRepository extends JpaRepository<Task, String>, JpaSpecificationExecutor<Task> {
 
     Optional<Task> findByIdAndDeletedAtIsNull(String id);
-
     List<Task> findByProjectIdAndDeletedAtIsNull(String projectId);
-
     List<Task> findByProjectIdAndStatusNotAndDeletedAtIsNull(String projectId, TaskStatus status);
-
     List<Task> findByIdInAndProjectIdAndDeletedAtIsNull(List<String> ids, String projectId);
-
     long countByProjectIdAndDeletedAtIsNull(String projectId);
-
     long countByProjectIdAndStatusAndDeletedAtIsNull(String projectId, TaskStatus status);
-
     long countByProjectIdAndIsClientVisibleTrueAndDeletedAtIsNull(String projectId);
-
     long countByProjectIdAndIsClientVisibleTrueAndStatusAndDeletedAtIsNull(String projectId, TaskStatus status);
 
     @Query("SELECT t FROM Task t LEFT JOIN FETCH t.assignee LEFT JOIN FETCH t.project WHERE t.id = :id AND t.deletedAt IS NULL")

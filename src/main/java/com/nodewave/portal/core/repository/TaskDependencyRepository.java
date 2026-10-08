@@ -11,10 +11,8 @@ import java.util.Optional;
 public interface TaskDependencyRepository extends JpaRepository<TaskDependency, String> {
 
     List<TaskDependency> findByTaskId(String taskId);
-
     List<TaskDependency> findByDependsOnTaskId(String dependsOnTaskId);
 
     boolean existsByTaskIdAndDependsOnTaskId(String taskId, String dependsOnTaskId);
-
     Optional<TaskDependency> findByTaskIdAndDependsOnTaskId(String taskId, String dependsOnTaskId);
 }
