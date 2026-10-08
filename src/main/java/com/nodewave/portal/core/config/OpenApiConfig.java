@@ -20,13 +20,13 @@ public class OpenApiConfig {
                         .title("NodeWave Core Enterprise Portal API")
                         .version("1.0.0")
                         .description("API Documentation & Interactive Testing untuk Backend NodeWave dengan arsitektur **Package-by-Feature (Vertical Slice Architecture)** berdasarkan Role.\n\n" +
-                                "### 🔐 Kredensial Akun (Password semua akun: `password123`):\n" +
+                                "### Kredensial Akun (Password semua akun: `password123`):\n" +
                                 "- **PM**: `pm@nodewave.id` (Atur dependensi, standup summary, dilarang mark DONE)\n" +
                                 "- **UI/UX Designer**: `designer@nodewave.id` (Update tugas UI/UX)\n" +
                                 "- **Frontend Engineer**: `frontend@nodewave.id` (Update tugas Frontend, upload attachment)\n" +
                                 "- **Backend Engineer**: `backend@nodewave.id` (Update tugas Backend, upload attachment)\n" +
                                 "- **Client**: `client@nodewave.id` (Masked tasks, data engineer & attachment tersembunyi)\n\n" +
-                                "### 💡 Cara Testing di Swagger:\n" +
+                                "### Cara Testing di Swagger:\n" +
                                 "1. Jalankan endpoint **`POST /api/auth/login`** dengan salah satu akun di atas.\n" +
                                 "2. Salin token JWT dari response.\n" +
                                 "3. Klik tombol hijau **Authorize 🔓** di kanan atas Swagger UI, tempelkan token pada kotak value (tanpa kata 'Bearer '), lalu klik **Authorize**.\n" +
